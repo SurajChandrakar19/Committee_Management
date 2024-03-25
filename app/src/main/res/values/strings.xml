@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">Samiti Sath</string>
+<!--    <string name="default_web_client_id">project-984922214057</string>-->
+
+    //array
+    <string-array name="select_type">
+        <item>President</item>
+        <item>Vice president</item>
+        <item>Secretary</item>
+        <item>Chairperson</item>
+        <item>Member</item>
+    </string-array>
+
+
+    <string-array name="select_rate">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    //string collection
+    //menu -> main for logout
+    <string name="action_logout">Logout</string>
+
+    //activity main drawer
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_list_candidate">Candidate List</string>
+    <string name="menu_monthly_pay">Pay Monthly</string>
+    <string name="title_menu_receive">Receive</string>
+    <string name="menu_received_money">Receive</string>
+    <string name="menu_manage_received_money">Manage Receive</string>
+    <string name="title_menu_pay">Pay</string>
+    <string name="menu_pay_money">Pay</string>
+    <string name="menu_pay_manage">Manage Pay</string>
+    <string name="title_menu_member">Member</string>
+    <string name="menu_add_member">Add Member</string>
+    <string name="menu_list_member">List Member</string>
+    <string name="menu_setting">Setting</string>
+
+    //my button design value
+    <string name="btn_add_member">Add Member</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="pay">Pay</string>
+    <string name="receive">Receive</string>
+
+    //activity new login page
+    <string name="text_login_tab_fragment_Text_View_forget_password">Forget Password</string>
+    <string name="text_login_tab_fragment_Text_View_create_samiti">Create samiti</string>
+    <string name="hint_login_tab_fragment_email">email</string>
+    <string name="hint_login_tab_fragment_password">Password</string>
+    <string name="image_massage_icon_right_down">Image Massage Icon</string>
+    <string name="text_login_tab_fragment_button_login">LOGIN</string>
+
+    //activity new sign up
+    <string name="hint_signup_tab_fragment_mobile_number">Mobile Number</string>
+    <string name="hint_signup_tab_fragment_create_username">Username Gmail</string>
+    <string name="hint_signup_tab_fragment_create_Password">Create Password</string>
+    <string name="text_signup_tab_fragment_signup">SIGNUP</string>
+    <string name="in_signup_to_login">I have already register</string>
+
+    //my text input edit text design
+    <string name="name_hint">Name</string>
+    <string name="amount_hint">Amount</string>
+    <string name="principal_amount_hint">Principal Amount</string>
+    <string name="total_amount_hint">Total Amount</string>
+    <string name="interest_hint">interest</string>
+    <string name="address_hint">Address</string>
+    <string name="rate_hint">Rate %</string>
+    <string name="mobile_number_hint">Number</string>
+    <string name="member_type_hint">Type</string>
+    <string name="date_hint">Date</string>
+    <string name="password_hint">Password</string>
+
+    //candidate list layout
+    <string name="under_list_view_name">Name : </string>
+    <string name="under_list_view_mobile_number">Mobile : </string>
+
+    //fragment add member
+    <string name="select_type">Member type</string>
+    <string name="select_date">select date</string>
+
+    //fragment dashboard
+    <string name="record">Record</string>
+    <string name="samiti_name_dashboard">Samiti Sath</string>
+    <string name="more">More</string>
+    <string name="cash_in_hand">Cash In Hand</string>
+    <string name="receive_pending">Receive Pending</string>
+
+    //fragment manage list of receive layout
+    <string name="select_rate">select rate %</string>
+    <string name="receive_date">Receive Date</string>
+
+    //fragment pay layout
+    <string name="carefully_select">Carefully select not changeable *</string>
+
+    //fragment receive manage layout
+    <string name="pay_date">Pay Date</string>
+    <string name="calculate">Calculate</string>
+
+    //login top header main layout
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+
+    //manage pay viewer layout
+    <string name="under_list_view_amount">Amount : </string>
+
+    //member list show layout
+    <string name="member">Member</string>
+
+    //nav header main layout
+    <string name="nav_header_title_suraj">Suraj Chandrakar</string>
+    <string name="nav_header_subtitle_email_suraj">surajchandrakarofficial@gmail.com</string>
+
+    //pay monthly viewer layout
+    <string name="paid_text">paid</string>
+    <string name="debtor">Debtor</string>
+
+    //mobile navigation
+    <string name="menu_pay_list">Pay List</string>
+    <string name="menu_pay_edit">Pay Edit</string>
+    <string name="menu_list_edit_member">Edit Member</string>
+
+    //nav login navigation
+    <string name="text_login_tab_fragment_label">Login Tab</string>
+    <string name="text_signup_tab_fragment_label">Signup Tab</string>
+
+    //android manifest file
+
+</resources>

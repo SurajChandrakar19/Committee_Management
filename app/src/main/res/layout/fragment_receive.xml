@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skc.committeemanagement.ui.receive.ReceiveFragment">
+
+<!--    <ListView-->
+<!--        android:id="@+id/id_receive_list_view_name"-->
+<!--        android:layout_width="@dimen/text_input_layout_width"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout"-->
+<!--        android:layout_width="@dimen/text_input_layout_width"-->
+<!--        android:layout_height="@dimen/text_input_layout_height_min"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/id_receive_text_view_name"-->
+<!--            android:layout_width="@dimen/text_input_layout_width"-->
+<!--            android:layout_height="@dimen/text_input_layout_height_min"-->
+<!--            android:hint="@string/select_name"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/receive_spinner"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"/>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/id_receive_select_gender_layout"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="@dimen/text_input_layout_width"-->
+<!--        android:layout_height="@dimen/text_input_layout_height_min"-->
+<!--        android:hint="@string/text_input_layout_select_gender_hint"-->
+<!--        app:boxBackgroundColor="#FFFFFF"-->
+<!--        app:boxBackgroundMode="outline"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:startIconDrawable="@drawable/ic_notifications_black_24dp"-->
+<!--        app:startIconTint="@color/text_input_layout_outline_color">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/id_receive_auto_complete_text_view_search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawablePadding="4dp"-->
+<!--            android:inputType="none"-->
+<!--            android:isScrollContainer="false"-->
+<!--            tools:ignore="TextContrastCheck" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

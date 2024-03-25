@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CommitteeManagement" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/clr_divider</item>
+    </style>
+
+    <style name="Theme.CommitteeManagement" parent="Base.Theme.CommitteeManagement" />
+
+    // this is for app bar main layout
+    <style name="Theme.committeeManagement.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.committeeManagement.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    //background color for drawer menu
+    <style name="MainBackgroundColor">
+        <item name="android:background">@color/clr_text_icon</item>
+    </style>
+
+    //login page forget password text
+    <style name="secondary_light_text_color">
+        <item name="android:textColor">@color/clr_text_secondary</item>
+    </style>
+
+    //app bar main layout
+    <style name="them_app_bar_popupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="them_app_bar_PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

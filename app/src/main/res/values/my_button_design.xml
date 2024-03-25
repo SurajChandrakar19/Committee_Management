@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cornerRadius">34dp</item>
+        <item name="android:textColor">@color/clr_text_icon</item>
+        <item name="android:backgroundTint">@color/clr_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyButton.AddMember">
+        <item name="android:text">@string/btn_add_member</item>
+    </style>
+
+    <style name="MyButton.Update">
+        <item name="android:text">@string/update</item>
+    </style>
+
+    <style name="MyButton.Delete">
+        <item name="android:text">@string/delete</item>
+    </style>
+
+    <style name="MyButton.Pay">
+        <item name="android:text">@string/pay</item>
+    </style>
+
+    <style name="MyButton.Receive">
+        <item name="android:text">@string/receive</item>
+    </style>
+</resources>

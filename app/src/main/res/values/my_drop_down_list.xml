@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyDropDownListLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="helperTextEnabled">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="helperText">*</item>
+        <item name="helperTextTextColor">@color/clr_accent</item>
+        <item name="android:layout_height">@dimen/f_input_layout_height_max</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">@color/clr_background</item>
+        <item name="hintTextColor">@color/clr_text_secondary</item>
+        <item name="endIconTint">@color/clr_text_secondary</item>
+        <item name="startIconTint">@color/black</item>
+    </style>
+
+    <style name="MyDropDownListLayout.Rate">
+        <item name="startIconDrawable">@drawable/ic_select_rate</item>
+    </style>
+
+    <style name="MyDropDownListLayout.Date">
+        <item name="startIconDrawable">@drawable/ic_calendar</item>
+        <item name="endIconDrawable">@drawable/ic_calendar</item>
+    </style>
+
+    <style name="MyDropDownListLayout.Type">
+        <item name="startIconDrawable">@drawable/ic_member_type</item>
+    </style>
+
+    <style name="MyAutoComepleteText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+<!--        <item name="android:drawablePadding">4dp</item>-->
+        <item name="android:inputType">none</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MyAutoComepleteText.Rate">
+        <item name="android:hint">@string/select_rate</item>
+    </style>
+
+    <style name="MyAutoComepleteText.Date">
+        <item name="android:hint">@string/select_date</item>
+    </style>
+
+    <style name="MySelectDateFormatLayout">
+        <item name="android:layout_width">@dimen/text_input_layout_width</item>
+        <item name="android:layout_height">@dimen/f_input_layout_height_max</item>
+        <!--         <item name="boxBackgroundColor">@color/tr</item>-->
+        <!--        <item name="android:layout_marginTop">@dimen/f_input_layout_margin_min</item>-->
+        <item name="boxBackgroundMode">outline</item>
+        <item name="errorEnabled">true</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperText">Required*</item>
+        <item name="helperTextTextColor">@color/clr_text_primary</item>
+        <item name="endIconTint">@color/black</item>
+        <item name="counterEnabled">true</item>
+        <item name="startIconTint">@color/black</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="boxBackgroundColor">@color/clr_background</item>
+    </style>
+</resources>

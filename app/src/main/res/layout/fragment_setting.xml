@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="settingStructure"
+            type="com.skc.committeemanagement.ui.setting.SettingStructure" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.skcsamiti.samitisath.ui.setting.SettingFragment">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/monthly_pay_amount"
+        style="@style/TextLayoutMy.Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="false"
+        app:layout_constraintVertical_bias="0.10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/monthly_pay_edit_text"
+            style="@style/TextInputEditText.Amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="monthly pay amount"
+            android:text="@{settingStructure.payMonthlyAmount}" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/set_mothly_pay"
+        style="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthly_pay_amount" />
+
+    <Button
+        android:id="@+id/cash_deposit"
+        style="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deposit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_cash_amount_layout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/add_cash_amount_layout"
+        style="@style/TextLayoutMy.Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="false"
+        app:layout_constraintVertical_bias="0.10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_mothly_pay">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cash_amount_edit_text"
+            style="@style/TextInputEditText.Amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="cash deposit amount"
+            android:text="@{settingStructure.cashDeposit}" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

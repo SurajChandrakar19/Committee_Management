@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Editing TextInputLayout-->
+    <style name="TextLayoutMy" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+       <item name="android:layout_marginEnd">15dp</item>
+       <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/f_input_layout_height_max</item>
+        <!--         <item name="boxBackgroundColor">@color/tr</item>-->
+        <!--        <item name="android:layout_marginTop">@dimen/f_input_layout_margin_min</item>-->
+        <item name="boxBackgroundMode">outline</item>
+        <item name="errorEnabled">true</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperText">*</item>
+        <item name="helperTextTextColor">@color/black</item>
+<!--        <item name="endIconTint">@color/black</item>-->
+        <item name="counterEnabled">true</item>
+        <item name="startIconTint">@color/black</item>
+<!--        <item name="endIconMode">clear_text</item>-->
+        <item name="hintTextColor">@color/clr_divider</item>
+        <item name="boxBackgroundColor">@color/clr_background</item>
+        <item name="endIconTint">@color/clr_text_secondary</item>
+    </style>
+
+    <style name="TextLayoutMy.Name">
+        <item name="counterMaxLength">20</item>
+        <item name="startIconDrawable">@drawable/ic_user_name</item>
+        <!--        <item name="android:hint">@string/name_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.Address">
+        <item name="counterMaxLength">30</item>
+        <item name="startIconDrawable">@drawable/ic_address</item>
+        <!--        <item name="android:hint">@string/address_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.Amount">
+        <item name="counterMaxLength">20</item>
+        <item name="startIconDrawable">@drawable/ic_amount</item>
+        <!--        <item name="android:hint">@string/amount_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.InterestAmount">
+        <item name="counterMaxLength">20</item>
+        <item name="startIconDrawable">@drawable/ic_select_rate</item>
+        <!--        <item name="android:hint">@string/interest_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.TotalAmount">
+        <item name="counterMaxLength">20</item>
+        <item name="startIconDrawable">@drawable/ic_total_money</item>
+        <!--        <item name="android:hint">@string/total_amount_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.PrincipalAmount">
+        <item name="counterMaxLength">20</item>
+        <item name="startIconDrawable">@drawable/ic_amount</item>
+        <!--    <item name="android:hint">@string/principal_amount_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.Rate">
+        <item name="counterMaxLength">3</item>
+        <item name="startIconDrawable">@drawable/ic_select_rate</item>
+        <!--        <item name="android:hint">@string/rate_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.Number">
+        <!--        <item name="counterMaxLength">10</item>-->
+        <item name="prefixText">+91</item>
+        <item name="counterMaxLength">10</item>
+        <item name="startIconDrawable">@drawable/ic_mobile_number</item>
+        <!--        <item name="android:hint">@string/mobile_number_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.Date" parent="MyDropDownListLayout.Date">
+        <item name="counterMaxLength">20</item>
+        <item name="startIconDrawable">@drawable/ic_calendar</item>
+        <!--        <item name="android:hint">@string/date_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.MemberType">
+        <item name="counterMaxLength">20</item>
+        <item name="startIconDrawable">@drawable/ic_member_type</item>
+        <!--        <item name="android:hint">@string/member_type_hint</item>-->
+    </style>
+
+    <style name="TextLayoutMy.PasswordLayout">
+        <item name="endIconMode">password_toggle</item>
+    </style>
+
+</resources>

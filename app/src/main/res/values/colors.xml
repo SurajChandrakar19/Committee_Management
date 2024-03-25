@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="clr_dark_primary">#ffd6ff</color>
+    <color name="clr_light_primary">#e7c6ff</color>
+    <color name="clr_primary">#c8b6ff</color>
+    <color name="clr_accent">#b8c0ff</color>
+    <color name="clr_divider">#bbd0ff</color>
+
+
+    <color name="clr_text_icon">#FFFFFF</color>
+
+    <color name="clr_text_primary">#212121</color>
+    <color name="clr_text_secondary">#757575</color>
+
+    <color name="clr_background">#FFFFFFFF</color>
+    <color name="clr_light_background">#ffd6ff</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

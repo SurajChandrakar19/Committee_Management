@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_dashboard"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_candidate"
+            android:icon="@drawable/ic_candidate_list"
+            android:title="@string/menu_list_candidate" />
+
+        <item
+            android:id="@+id/nav_pay_monthly"
+            android:icon="@drawable/ic_pay_monthly"
+            android:title="@string/menu_monthly_pay" />
+    </group>
+
+    <item android:title="@string/title_menu_receive">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_receive"
+                    android:icon="@drawable/ic_receive_money"
+                    android:title="@string/menu_received_money" />
+                <item
+                    android:id="@+id/nav_receive_mange"
+                    android:icon="@drawable/ic_rcceive_manage"
+                    android:title="@string/menu_manage_received_money" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/title_menu_pay">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_pay_money"
+                    android:icon="@drawable/ic_pay_total"
+                    android:title="@string/menu_pay_money" />
+                <item
+                    android:id="@+id/nav_pay_manage"
+                    android:icon="@drawable/ic_pay_manage"
+                    android:title="@string/menu_pay_manage" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/title_menu_member">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_add_member"
+                    android:icon="@drawable/ic_add_member"
+                    android:title="@string/menu_add_member" />
+                <item
+                    android:id="@+id/nav_list_member"
+                    android:icon="@drawable/ic_list_member"
+                    android:title="@string/menu_list_member" />
+            </group>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_24"
+                android:title="@string/menu_setting" />
+        </menu>
+    </item>
+    <!--    <item-->
+    <!--        android:id="@+id/nav_logout"-->
+    <!--        android:title="@string/logout" />-->
+</menu>

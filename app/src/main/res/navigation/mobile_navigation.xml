@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:name="com.example.samitisath.ui.home.PayFragment"-->
+<!--        android:label="@string/menu_home"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_gallery"-->
+<!--        android:name="com.example.samitisath.ui.gallery.PayFragment"-->
+<!--        android:label="@string/menu_gallery"-->
+<!--        tools:layout="@layout/fragment_gallery" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_slideshow"-->
+<!--        android:name="com.example.samitisath.ui.slideshow.SlideshowFragment"-->
+<!--        android:label="@string/menu_slideshow"-->
+<!--        tools:layout="@layout/fragment_slideshow" />-->
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.skc.committeemanagement.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_candidate"
+            app:destination="@id/nav_candidate" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_pay_monthly"
+            app:destination="@id/nav_pay_monthly" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_receive_mange"
+            app:destination="@id/nav_receive_mange" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_receive"
+            app:destination="@id/nav_receive" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_pay_money"
+            app:destination="@id/nav_pay_money" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_pay_manage"
+            app:destination="@id/nav_pay_manage" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_add_member"
+            app:destination="@id/nav_add_member" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_list_member"
+            app:destination="@id/nav_list_member" />
+        <action
+            android:id="@+id/action_nav_dashboard_to_nav_setting"
+            app:destination="@id/nav_setting" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_candidate"
+        android:name="com.skc.committeemanagement.ui.candidate.CandidateFragment"
+        android:label="@string/menu_list_candidate"
+        tools:layout="@layout/fragment_candidate" />
+
+    <fragment
+        android:id="@+id/nav_pay_money"
+        android:name="com.skc.committeemanagement.ui.pay.PayFragment"
+        android:label="@string/menu_pay_money"
+        tools:layout="@layout/fragment_pay" />
+
+    <fragment
+        android:id="@+id/nav_receive"
+        android:name="com.skc.committeemanagement.ui.receive.ReceiveFragment"
+        android:label="@string/menu_received_money"
+        tools:layout="@layout/fragment_receive" >
+        <action
+            android:id="@+id/action_nav_receive_to_nav_receive_after"
+            app:destination="@id/nav_receive_after" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_receive_after"
+        android:name="com.skc.committeemanagement.ui.receive.ReceiveMangeFragment"
+        android:label="Receive Money"
+        tools:layout="@layout/fragment_receive_mange">
+
+        <argument
+            android:name="receive_mange"
+            app:argType="com.skc.committeemanagement.ui.receive.ReceiveStructure" />
+        <action
+            android:id="@+id/action_nav_receive_after_to_nav_receive"
+            app:destination="@id/nav_receive" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_receive_mange"
+        android:name="com.skc.committeemanagement.ui.manage_receive.ReceiveListFragment"
+        android:label="Receive List"
+        tools:layout="@layout/fragment_receive_list">
+
+        <action
+            android:id="@+id/nav_receive_list_to_edit_receive_table"
+            app:destination="@id/nav_receive_mange_after" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_receive_mange_after"
+        android:name="com.skc.committeemanagement.ui.manage_receive.MangeListOfReceiveFragment"
+        android:label="Manage Receive"
+        tools:layout="@layout/fragment_mange_list_of_receive">
+        <action
+            android:id="@+id/nav_edit_receive_table_to_receive_list"
+            app:destination="@id/nav_receive_mange" />
+        <argument
+            android:name="list_to_receive"
+            app:argType="com.skc.committeemanagement.ui.receive.ReceiveStructure" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pay_monthly"
+        android:name="com.skc.committeemanagement.ui.pay_monthly.PayMonthlyFragment"
+        android:label="@string/menu_monthly_pay"
+        tools:layout="@layout/fragment_pay_monthly" />
+
+    <fragment
+        android:id="@+id/nav_add_member"
+        android:name="com.skc.committeemanagement.ui.add_member.AddMemberFragment"
+        android:label="@string/menu_add_member"
+        tools:layout="@layout/fragment_add_member" />
+
+    <fragment
+        android:id="@+id/nav_list_member"
+        android:name="com.skc.committeemanagement.ui.member_list.ListMemberFragment"
+        android:label="@string/menu_list_member"
+        tools:layout="@layout/fragment_list_member" >
+        <action
+            android:id="@+id/action_nav_list_member_to_nav_list_edit_member"
+            app:destination="@id/nav_list_edit_member" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_pay_manage"
+        android:name="com.skc.committeemanagement.ui.manage_pay.ManagePayFragment"
+        android:label="@string/menu_pay_list"
+        tools:layout="@layout/fragment_manage_pay" >
+        <action
+            android:id="@+id/action_nav_pay_manage_to_managePayUpdateDeleteFragment"
+            app:destination="@id/managePayUpdateDeleteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/managePayUpdateDeleteFragment"
+        android:name="com.skc.committeemanagement.ui.manage_pay.ManagePayUpdateDeleteFragment"
+        android:label="@string/menu_pay_edit"
+        tools:layout="@layout/fragment_manage_pay_update_delete" >
+        <action
+            android:id="@+id/action_managePayUpdateDeleteFragment_to_nav_pay_manage"
+            app:destination="@id/nav_pay_manage" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_list_edit_member"
+        android:name="com.skc.committeemanagement.ui.member_list.DeleteEditMemberFragment"
+        android:label="@string/menu_list_edit_member"
+        tools:layout="@layout/fragment_delete_edit_member" >
+        <action
+            android:id="@+id/action_nav_list_edit_member_to_nav_list_member"
+            app:destination="@id/nav_list_member" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.skc.committeemanagement.ui.setting.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" />
+
+</navigation>
